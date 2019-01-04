@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ApplianceCollectionViewCell" customModule="DynamicCollectionViewInsideTableViewCell" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ApplianceCollectionViewCell" id="EDc-eC-exp" customClass="ApplianceCollectionViewCell" customModule="DynamicCollectionViewInsideTableViewCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="87" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="87" height="22"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WF8-IN-3kQ">
+                        <rect key="frame" x="0.0" y="0.0" width="87" height="22"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-symbol-template" translatesAutoresizingMaskIntoConstraints="NO" id="7zZ-gh-luT">
+                                <rect key="frame" x="8" y="5" width="12" height="12"/>
+                                <color key="tintColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="AW5-1A-vWT"/>
+                                    <constraint firstAttribute="width" secondItem="7zZ-gh-luT" secondAttribute="height" multiplier="1:1" id="b3I-3C-a6c"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pms-lB-dya">
+                                <rect key="frame" x="24" y="0.0" width="59" height="22"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                                <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pms-lB-dya" firstAttribute="centerY" secondItem="WF8-IN-3kQ" secondAttribute="centerY" id="0z1-KI-9Ow"/>
+                            <constraint firstItem="pms-lB-dya" firstAttribute="leading" secondItem="7zZ-gh-luT" secondAttribute="trailing" constant="4" id="IXQ-ZH-CNq"/>
+                            <constraint firstAttribute="bottom" secondItem="pms-lB-dya" secondAttribute="bottom" id="JGt-I8-0u7"/>
+                            <constraint firstItem="pms-lB-dya" firstAttribute="top" secondItem="WF8-IN-3kQ" secondAttribute="top" id="exu-a1-B5V"/>
+                            <constraint firstItem="7zZ-gh-luT" firstAttribute="leading" secondItem="WF8-IN-3kQ" secondAttribute="leading" constant="8" id="naa-B2-d3X"/>
+                            <constraint firstItem="7zZ-gh-luT" firstAttribute="centerY" secondItem="WF8-IN-3kQ" secondAttribute="centerY" id="pob-vf-SCh"/>
+                            <constraint firstAttribute="trailing" secondItem="pms-lB-dya" secondAttribute="trailing" constant="4" id="rVJ-gx-M9H"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WF8-IN-3kQ" secondAttribute="bottom" id="0Ht-a3-2t3"/>
+                <constraint firstItem="WF8-IN-3kQ" firstAttribute="top" secondItem="EDc-eC-exp" secondAttribute="top" id="3ep-IP-Ia2"/>
+                <constraint firstItem="WF8-IN-3kQ" firstAttribute="leading" secondItem="EDc-eC-exp" secondAttribute="leading" id="fCk-Yp-9Vz"/>
+                <constraint firstAttribute="trailing" secondItem="WF8-IN-3kQ" secondAttribute="trailing" id="wAS-vm-NuZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="bIQ-GC-5Mb"/>
+            <size key="customSize" width="87" height="22"/>
+            <connections>
+                <outlet property="roundedView" destination="WF8-IN-3kQ" id="rFT-mh-bxN"/>
+                <outlet property="tagLabel" destination="pms-lB-dya" id="eoo-WA-tqp"/>
+            </connections>
+            <point key="canvasLocation" x="264.5" y="577"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="check-symbol-template" width="16" height="16"/>
+    </resources>
+</document>
