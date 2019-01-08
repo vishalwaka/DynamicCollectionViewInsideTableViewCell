@@ -13,6 +13,9 @@ class ApplianceTableViewCell: UITableViewCell {
     @IBOutlet weak var applianceCollectionView: UICollectionView!
     @IBOutlet weak var applianceCollectionViewHeightConstraint: NSLayoutConstraint!
     
+    var collectionViewObserver: NSKeyValueObservation?
+
+    
     @IBOutlet weak var firstStackView: UIStackView!
     
     var vehicle = Vehicle(houseType: "", vehicleType: "", included: [], imageUrl: "")
@@ -26,6 +29,26 @@ class ApplianceTableViewCell: UITableViewCell {
         applianceCollectionView.delegate = self
         let alignedFlowLayout = applianceCollectionView?.collectionViewLayout as? AlignedCollectionViewFlowLayout
         alignedFlowLayout?.horizontalAlignment = .left
+        addObserver()
+        applianceCollectionView.isScrollEnabled = false
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layoutIfNeeded()
+    }
+    
+    func addObserver() {
+        collectionViewObserver = applianceCollectionView.observe(\.contentSize, changeHandler: { [weak self] (collectionView, change) in
+            self?.applianceCollectionView.invalidateIntrinsicContentSize()
+            self?.applianceCollectionViewHeightConstraint.constant = collectionView.contentSize.height
+            self?.applianceCollectionViewHeightConstraint.priority = UILayoutPriority(rawValue: 1000)
+            self?.setNeedsLayout()
+            self?.layoutIfNeeded()
+        })
+    }
+    deinit {
+        collectionViewObserver = nil
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -37,13 +60,13 @@ class ApplianceTableViewCell: UITableViewCell {
     func configureForVehicle(_ vehicle: Vehicle, selectedHouseType: String) {
         self.vehicle = vehicle
         applianceCollectionView.reloadData()
-        setCollectionViewHeight()
+//        setCollectionViewHeight()
     }
     
     func setCollectionViewHeight() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
             UIView.animate(withDuration: 0.1, animations: {
-                self.applianceCollectionViewHeightConstraint.constant = self.applianceCollectionView.contentSize.height
+//                self.applianceCollectionViewHeightConstraint.constant = self.applianceCollectionView.contentSize.height
                 self.contentView.setNeedsLayout()
             })
         }

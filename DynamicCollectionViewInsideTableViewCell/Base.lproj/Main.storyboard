@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SourceSansPro-Semibold.ttf">
-            <string>SourceSansPro-Semibold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -34,87 +29,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="219"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2b3-S1-pjc">
-                                                    <rect key="frame" x="20" y="10" width="335" height="199"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zvc-j8-6TY">
-                                                            <rect key="frame" x="16" y="16" width="303" height="167"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appliances you can fit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fek-at-yYa">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="303" height="14"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="14" id="mfm-S4-YO1"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="14"/>
-                                                                    <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7r8-6v-CYN">
-                                                                    <rect key="frame" x="0.0" y="22" width="303" height="92"/>
-                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" priority="999" constant="60" id="sQB-LV-7eI"/>
-                                                                    </constraints>
-                                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="O1N-aS-AFF" customClass="AlignedCollectionViewFlowLayout" customModule="DynamicCollectionViewInsideTableViewCell" customModuleProvider="target">
-                                                                        <size key="itemSize" width="50" height="50"/>
-                                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                                    </collectionViewFlowLayout>
-                                                                    <cells/>
-                                                                </collectionView>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zys-g7-jdp" customClass="CornerRadiusView" customModule="DynamicCollectionViewInsideTableViewCell" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="122" width="303" height="45"/>
-                                                                    <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If your apartment have a working Service Life it will reduce the overall quote value." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcb-E8-EUz">
-                                                                            <rect key="frame" x="8" y="6" width="287" height="33"/>
-                                                                            <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="13"/>
-                                                                            <color key="textColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                    <color key="backgroundColor" red="1" green="0.93725490199999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <constraints>
-                                                                        <constraint firstItem="Rcb-E8-EUz" firstAttribute="centerX" secondItem="Zys-g7-jdp" secondAttribute="centerX" id="S2J-Lu-NxH"/>
-                                                                        <constraint firstItem="Rcb-E8-EUz" firstAttribute="top" secondItem="Zys-g7-jdp" secondAttribute="top" constant="6" id="Xud-QA-Dwe"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="Rcb-E8-EUz" secondAttribute="trailing" constant="8" id="cMN-Me-RL2"/>
-                                                                        <constraint firstItem="Rcb-E8-EUz" firstAttribute="centerY" secondItem="Zys-g7-jdp" secondAttribute="centerY" id="cm9-X1-KJj"/>
-                                                                        <constraint firstAttribute="height" constant="45" id="mxW-tS-y6z"/>
-                                                                    </constraints>
-                                                                    <userDefinedRuntimeAttributes>
-                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                            <real key="value" value="2"/>
-                                                                        </userDefinedRuntimeAttribute>
-                                                                    </userDefinedRuntimeAttributes>
-                                                                </view>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7r8-6v-CYN">
+                                                    <rect key="frame" x="15" y="11" width="345" height="197"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstItem="Zvc-j8-6TY" firstAttribute="top" secondItem="2b3-S1-pjc" secondAttribute="top" constant="16" id="9PM-Yn-s1l"/>
-                                                        <constraint firstItem="Zvc-j8-6TY" firstAttribute="leading" secondItem="2b3-S1-pjc" secondAttribute="leading" constant="16" id="NWl-Bg-oBJ"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Zvc-j8-6TY" secondAttribute="trailing" constant="16" id="Y4H-ca-cRd"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Zvc-j8-6TY" secondAttribute="bottom" constant="16" id="zz7-bj-3xa"/>
+                                                        <constraint firstAttribute="height" constant="197" id="L2r-gr-mpg"/>
                                                     </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="2"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="O1N-aS-AFF" customClass="AlignedCollectionViewFlowLayout" customModule="DynamicCollectionViewInsideTableViewCell" customModuleProvider="target">
+                                                        <size key="itemSize" width="50" height="50"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells/>
+                                                </collectionView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="2b3-S1-pjc" firstAttribute="top" secondItem="xcV-Io-Rr8" secondAttribute="top" constant="10" id="NLq-Pv-9XM"/>
-                                                <constraint firstItem="2b3-S1-pjc" firstAttribute="leading" secondItem="xcV-Io-Rr8" secondAttribute="leading" constant="20" id="VAf-cc-bEL"/>
-                                                <constraint firstAttribute="bottom" secondItem="2b3-S1-pjc" secondAttribute="bottom" constant="10" id="co0-ar-s9X"/>
-                                                <constraint firstItem="2b3-S1-pjc" firstAttribute="centerX" secondItem="xcV-Io-Rr8" secondAttribute="centerX" id="v1n-oj-TdL"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7r8-6v-CYN" secondAttribute="trailing" id="9Z0-Kf-srj"/>
+                                                <constraint firstItem="7r8-6v-CYN" firstAttribute="top" secondItem="xcV-Io-Rr8" secondAttribute="topMargin" id="GAW-Ny-Ah1"/>
+                                                <constraint firstItem="7r8-6v-CYN" firstAttribute="leading" secondItem="xcV-Io-Rr8" secondAttribute="leadingMargin" id="ouI-Gh-U2L"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="7r8-6v-CYN" secondAttribute="bottom" id="xxS-Gk-5bp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.58431372550000005" blue="0.52941176469999995" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="applianceCollectionView" destination="7r8-6v-CYN" id="KtJ-ke-LhU"/>
-                                            <outlet property="applianceCollectionViewHeightConstraint" destination="sQB-LV-7eI" id="XEb-CN-qCZ"/>
-                                            <outlet property="firstStackView" destination="Zvc-j8-6TY" id="3r6-b6-5E8"/>
+                                            <outlet property="applianceCollectionViewHeightConstraint" destination="L2r-gr-mpg" id="I6J-53-Rpu"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

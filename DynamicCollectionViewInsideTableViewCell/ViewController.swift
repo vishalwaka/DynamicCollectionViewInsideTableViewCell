@@ -58,6 +58,11 @@ class ViewController: UIViewController {
                                  included: ["1 Sofa (3+2+1)", "2 Centre Table", "3 Iron Almirah/ 3 door wardrobe(dismantled)+ Almirah", "1 TV", "8 Chairs", "1 Washing Machine", "1 Fridge", "1 Single Cot", "2 Double COT", "3 Double MATRESS", "1 Dining Table", "1 Shoe Rack", "35 Carton box", "Study Table", "Water Purifier"], imageUrl: "canter_19@3x.png"))
         return vehicles
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.reloadData()
+    }
 
     @objc func setRandomHouse() {
         selectedHouseType = randomHouseSelect
