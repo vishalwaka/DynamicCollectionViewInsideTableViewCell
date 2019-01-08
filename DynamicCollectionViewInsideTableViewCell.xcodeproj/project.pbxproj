@@ -16,7 +16,6 @@
 		3D2D5A9921DF54A60051EAFF /* ApplianceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D5A9721DF54A50051EAFF /* ApplianceTableViewCell.swift */; };
 		3D2D5A9A21DF54A60051EAFF /* ApplianceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2D5A9821DF54A60051EAFF /* ApplianceCollectionViewCell.xib */; };
 		3D2D5A9C21DF55760051EAFF /* AlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D5A9B21DF55760051EAFF /* AlignedCollectionViewFlowLayout.swift */; };
-		3D33431721E3279800D91BB6 /* IntrinsicSizeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33431621E3279800D91BB6 /* IntrinsicSizeCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		3D2D5A9721DF54A50051EAFF /* ApplianceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplianceTableViewCell.swift; sourceTree = "<group>"; };
 		3D2D5A9821DF54A60051EAFF /* ApplianceCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplianceCollectionViewCell.xib; sourceTree = "<group>"; };
 		3D2D5A9B21DF55760051EAFF /* AlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		3D33431621E3279800D91BB6 /* IntrinsicSizeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicSizeCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 				3D1207F721D5504D00488772 /* LaunchScreen.storyboard */,
 				3D1207FA21D5504D00488772 /* Info.plist */,
 				3D2D5A9521DF53320051EAFF /* ApplianceCollectionViewCell.swift */,
-				3D33431621E3279800D91BB6 /* IntrinsicSizeCollectionView.swift */,
 			);
 			path = DynamicCollectionViewInsideTableViewCell;
 			sourceTree = "<group>";
@@ -155,7 +152,6 @@
 				3D1207EF21D5504B00488772 /* AppDelegate.swift in Sources */,
 				3D2D5A9921DF54A60051EAFF /* ApplianceTableViewCell.swift in Sources */,
 				3D2D5A9C21DF55760051EAFF /* AlignedCollectionViewFlowLayout.swift in Sources */,
-				3D33431721E3279800D91BB6 /* IntrinsicSizeCollectionView.swift in Sources */,
 				3D2D5A9621DF53320051EAFF /* ApplianceCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
